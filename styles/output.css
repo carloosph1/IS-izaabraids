@@ -730,10 +730,6 @@ video {
   height: 100%;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .w-28 {
   width: 7rem;
 }
@@ -1478,6 +1474,10 @@ html {
   }
 }
 
+.main {
+  overflow: hidden;
+}
+
 /* PARA MEDIOS DISPOSITIVOS */
 
 @media screen and (max-width: 768px) {
@@ -1486,10 +1486,12 @@ html {
   }
 }
 
-.hover\:scale-125:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+/* DISPOSITIVOS PEQUENOS */
+
+@media screen and (max-width: 460px) {
+  .container {
+    padding-inline: 1rem;
+  }
 }
 
 .hover\:scale-150:hover {

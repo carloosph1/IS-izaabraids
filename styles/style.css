@@ -316,10 +316,22 @@ html {
   }
 }
 
+.main {
+
+  overflow: hidden;
+}
+
 /* PARA MEDIOS DISPOSITIVOS */
 @media screen and (max-width: 768px) {
   .nav-menu {
     width: 70%;
+
+  }
+}
+/* DISPOSITIVOS PEQUENOS */
+@media screen and (max-width: 460px) {
+  .container {
+    padding-inline: 1rem;
 
   }
 }
