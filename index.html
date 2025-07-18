@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<!--Fonte google-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+
+
+<!--Meta tag OG-->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="IS IzaBraids" />
+<meta property="og:image" content="" />
+<meta property="og:description"
+    content="Cada cuidado estético é um passo em direção à sua melhor versão. Nunca pare de se transformar!" />
+<meta property="og:site_name" content="IS IzaBraids" />
+
+<link rel="stylesheet" href="./styles/output.css" />
+
+<!--=============== REMIXICON ===============-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" type="image" href="./assets/trancas.png">
+
+<title>IS Izaabraids</title>
+</head>
+
+<body class="overflow-x-hidden" id="inicio">
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#inicio" class="nav-logo pl-5 opacidade-icon">IzaaBraids</a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#combos" class="nav-link">Combos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#nago" class="nav-link">Nagô</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#masculino" class="nav-link">Masculino</a>
+                </li>
+
+            </ul>
+            <i class=" ri-close-line nav-close" id="nav-close"></i>
+        </div>
+        <div class="nav-btns">
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line "></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- FIM HEADER -->
+<!-- inicio -->
+
+<div class="w-full h-[420px]  bgr-home bg-cover bg-center object-cover opacidade-icon ">
+
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img src="./assets/logo.jpg" alt="logo"
+            class="w-[120px] h-[120px] shadow-xl rounded-full object-cover animate-flutuar cursor-pointer foto-mv">
+
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-black title-mv ">IS Izaabraids</h1>
+
+        <span class="text-black text-sm ml-4 mr-4 mt-4 text-center opacidade-icon">Av. Prof. José dos Anjos, 217 -
+            Campo Grande - PE</span>
+        <div class="bg-white px-4 py-1 rounded-lg mt-5 shadow-lg shadow-red-700/60 opacidade-icon" id="date-span">
+            <span class="text-black font-medium">Seg a Dom - 8:00 as 18:00</span>
+        </div>
+    </div>
+</div>
+<!-- fim inicio -->
+<div class="mt-9  mb-3 py-4" id="servicos">
+</div>
+<h2 class="text-2xl md:text-3xl text-center font-bold mt-10 mb-14 hover:text-my-dark-brown surgir-icon">Conheça meus
+    serviços</h2>
+<h3
+    class="text-2xl md:text-3xl text-center font-bold mt-14 mb-11 text-my-marrom-escuro hover:text-my-dark-brown opacidade-icon">
+    Tabela de <br> tamanhos <i class="text-my-marrom-médio ri-ruler-fill"></i></h3>
+
+<!-- INICIO tabela tamanhos -->
+<h2 class="text-2xl text-center font-bold py-2 mb-7 text-my-marrom-escuro hover:text-my-dark-brown opacidade-icon">
+    Box Braids <i class="text-my-marrom-médio ri-arrow-down-wide-fill"></i></h2>
+<!----------------------- INICIO MENU serviços ------------------->
+<div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10
+mx-auto max-w-7xl px-3 mb-16 justify-center">
+        <!-- produto item -->
+        <div class="flex gap-8">
+            <img src="/assets/ateosombros.png" alt="Ombros"
+                class="w-32 h-40 rounded-md scale-110 mt-1 object-cover resume-left">
+
+            <div class="font-bold">
+                <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Ombros</p>
+                <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">Box Braids
+                    até a linha dos ombros</p>
+                <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                    <p class="font-bold text-lg resume-left">R$ 130.00</p>
+                    <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Box Braids - até a linha dos ombros" data-price="130.00">
+
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- produto item -->
+        <!-- produto item -->
+        <div class="flex gap-8">
+            <img src="/assets/atecostas.png" alt="Costas"
+                class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+            <div class="font-bold">
+                <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Costas</p>
+                <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">Box Braids
+                    até a linha das costas</p>
+                <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                    <p class="font-bold text-lg resume-left">R$ 150.00</p>
+                    <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Box Braids - até a linha das costas" data-price="150.00">
+
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM produto item -->
+        <!-- produto item -->
+        <div class="flex gap-8">
+            <img src="/assets/atecintura.png" alt="Cintura"
+                class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+            <div class="font-bold">
+                <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Cintura</p>
+                <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">Box
+                    Braids até a linha da cintura</p>
+                <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                    <p class="font-bold text-lg resume-left">R$ 180.00</p>
+                    <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Box Braids - até a linha da cintura" data-price="180.00">
+
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM produto item -->
+        <!-- produto item -->
+        <div class="flex gap-8">
+            <img src="/assets/atequadril.png" alt="Designer de sobrancelhas"
+                class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+            <div class="font-bold">
+                <p class="font-bold  text-black hover:text-my-dark-brown title-produto text-center">Quadril</p>
+                <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">Box
+                    Braids até a linha do quadril</p>
+                <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                    <p class="font-bold text-lg resume-left">R$ 200.00</p>
+                    <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Box Braids - até a linha do quadril" data-price="200.00">
+
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM produto item -->
+
+        <!-- FIM tabela tamanhos -->
+    </main>
+
+    <!----------------------- FIM MENU serviços ------------------->
+
+    <!-- INICIO tabela tamanhos -->
+    <h2
+        class="text-2xl text-center font-bold py-2 mb-7 text-my-marrom-escuro hover:text-my-dark-brown opacidade-icon">
+        Tranças com cachos <i class="text-my-marrom-médio ri-arrow-down-wide-fill"></i></h2>
+    <!-- FIM tabela tamanhos -->
+
+
+    <!-- INICIO MENU serviços 2 -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mx-auto max-w-7xl px-3 mb-16 justify-center">
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/ateosombros.png" alt="ombros"
+                    class="w-32 h-40 rounded-md scale-110 mt-1 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Ombros</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                        Tranças com cachos até a linha dos ombros</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 220.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças com cachos - até a linha dos ombros" data-price="220.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- produto item -->
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/atecostas.png" alt="Costas"
+                    class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Costas</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                        Tranças com cachos até a linha das costas</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 240.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças com cachos - até a linha das costas" data-price="240.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"> </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM produto item -->
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/atecintura.png" alt="Cintura"
+                    class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Cintura</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">
+                        Tranças com cachos até a linha da cintura</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 270.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças com cachos - até a linha da cintura" data-price="270.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"> </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM produto item -->
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/atequadril.png" alt="Designer de sobrancelhas"
+                    class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold  text-black hover:text-my-dark-brown title-produto text-center">Quadril</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">
+                        Tranças com cachos até a linha do quadril</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 290.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças com cachos - até a linha do quadril" data-price="290.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"> </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM produto item -->
+
+            <!-- FIM tabela tamanhos -->
+        </main>
+    </div>
+    <!-- FIM MENU serviços 2-->
+
+    <!------GRID COMBOS------>
+
+    <div class="mx-auto max-w-7xl px-2 my-2" id="combos">
+        <h2 class="font-bold text-3xl mt-11 mb-8 hover:text-my-dark-brown text-center opacidade-icon">Combos</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10
+mx-auto max-w-7xl px-3 mb-16 pb-8" id="menu">
+        <!-- produto item combo -->
+        <div class="combo-card opacidade-icon ">
+            <div class="combo-images-container opacidade-icon ">
+                <div class="combo-item-single">
+                    <img src="/assets/nagoTiara.jpg" alt="Nagô tiara"
+                        class="w-28 h-40 rounded-md object-cover lleft">
+                    <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title">Nagô tiara</p>
+                </div>
+
+                <div class="combo-item-single">
+                    <img src="/assets/PostiçaRealista.jpg" alt="Postiça realista"
+                        class="w-28 h-40 rounded-md object-cover rright">
+                    <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title">Postiça
+                        realista</p>
+                </div>
+            </div>
+
+            <div class="combo-details-content">
+                <p class="text-xs font-medium text-justify text-black hover:text-my-golden-ochre"></p>
+
+                <p class="font-bold text-black hover:text-my-dark-brown title-produto">Nagô tiara + postiça realista
+                </p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg opacidade-icon">R$ 80.00</p>
+                    <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Nagô tiara + postiça realista" data-price="80.00">
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--FIM produto item -->
+        <!-- produto item combo-->
+        <div class="combo-card opacidade-icon">
+            <div class="combo-images-container opacidade-icon ">
+                <div class="combo-item-single">
+                    <img src="/assets/BoxBraids.jpg" alt="Nagô tiara"
+                        class="w-28 h-40 rounded-md object-cover lleft">
+                    <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title">Box braids</p>
+                </div>
+
+                <div class="combo-item-single">
+                    <img src="/assets/GelnaTips.jpg" alt="Postiça realista"
+                        class="w-28 h-40 rounded-md object-cover rright">
+                    <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title">Gel na tips</p>
+                </div>
+            </div>
+
+            <div class="combo-details-content">
+                <p class="text-xs font-medium text-justify text-black hover:text-my-golden-ochre"></p>
+
+                <p class="font-bold text-black hover:text-my-dark-brown title-produto">Box braids + gel na tips</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg opacidade-icon">R$ 240.00</p>
+                    <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                        data-name="Box braids + gel na tips" data-price="240.00">
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--FIM produto item -->
+
+        <!-- produto item combo amiga-->
+
+<div class="combo-card opacidade-icon">
+    <div class="mx-auto max-w-7xl px-2 my-2" id="combos">
+        <h2 class="font-bold text-2xl mt-11 mb-4 hover:text-my-dark-brown text-center rright">Combo Amiga
+        </h2>
+    </div>
+    <div class="combo-images-container opacidade-icon ">
+        <div class="combo-item-single">
+            <img src="/assets/GypsyBraids.jpg" alt="Gypsy Braids"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000 cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Gypsy Braids
+            </p>
+        </div>
+        <div class="combo-item-single">
+            <img src="/assets/SlimBraids.jpg" alt="Slim Braids"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000 cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Slim Braids
+            </p>
+        </div>
+        <div class="combo-item-single">
+            <img src="/assets/Ghana.jpg" alt="Ghana"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000 cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Ghana</p>
+        </div>
+        <div class="combo-item-single">
+            <img src="/assets/Goddessbraids.jpg" alt="Goddes Braids"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000 cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Goddes Braids
+            </p>
+        </div>
+        <div class="combo-item-single">
+            <img src="/assets/Twist.jpg" alt="Twist braids"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000  cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Twist braids
+            </p>
+        </div>
+        <div class="combo-item-single">
+            <img src="/assets/Goddesbraids.jpg" alt="Postiça realista"
+                class="w-28 h-40 rounded-md object-cover hover:scale-150 transition duration-1000 cursor-pointer">
+            <p class="font-bold text-black hover:text-my-dark-brown text-center combo-title ">Goddes braids
+            </p>
+        </div>
+    </div>
+
+    <div class="combo-details-content">
+        <p class="text-xs font-medium text-justify text-black hover:text-my-golden-ochre"></p>
+
+        <p class="font-bold text-black hover:text-my-dark-brown title-produto">Qualquer trança</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg opacidade-icon">R$ 520.00</p>
+            <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                data-name="Combo Amiga" data-price="520.00">
+                <i class="fa fa-cart-plus text-lg text-white"> </i>
+            </button>
+        </div>
+    </div>
+</div>
+<!--FIM produto item -->
+
+</div>
+    <!-- FIM GRID COMBOS-->
+
+    <!------GRID nagô------>
+
+    <h3 class="text-2xl md:text-3xl text-center font-bold mt-10 mb-11 text-my-marrom-escuro hover:text-my-dark-brown opacidade-icon"
+        id="nago">Nagô</h3>
+
+    <!-- INICIO MENU serviços 3 -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10
+mx-auto max-w-7xl px-3 mb-16">
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/Ghana.jpg" alt="nago"
+                    class="w-32 h-40 rounded-md scale-110 mt-1 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Cabelo todo</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                        Tranças nagô com cabelo a partir de:</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 120.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças Cabelo todo Ghana" data-price="120.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- produto item -->
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/nagoTiara.jpg" alt="Costas"
+                    class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Nago Tiara</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                        Tranças formato de tiara a partir de:</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 60.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças tiara" data-price="60.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"> </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM produto item -->
+            <!-- produto item -->
+            <div class="flex gap-4">
+                <img src="/assets/nagoTop.jpg" alt="Cintura"
+                    class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+                <div class="font-bold">
+                    <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Nagô lateral / topo</p>
+                    <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">
+                        Tranças nagô lateral ou topo a partir de:</p>
+                    <div class="flex items-center gap-2 justify-between mt-3 combo-details-content">
+                        <p class="font-bold text-lg resume-left">R$ 12.00</p>
+                        <button class="bg-gray-900 px-5 pt-1 rounded add-to-cart-btn opacidade-icon"
+                            data-name="Tranças nagô lateral ou topo " data-price="12.00">
+
+                            <i class="fa fa-cart-plus text-lg text-white"> </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM produto item -->
+
+
+            <!-- FIM tabela tamanhos -->
+        </main>
+    </div>
+    <!-- FIM MENU serviços 3-->
+    <!------ fim GRID nagô------>
+
+    <!------GRID Masculina------>
+
+<h3 class="text-2xl md:text-3xl text-center font-bold mt-16 mb-11 text-my-marrom-escuro hover:text-my-dark-brown opacidade-icon"
+    id="masculino">Trancas Masculinas</h3>
+
+    <!-- INICIO  serviços masculino  -->
+<div id="menu">
+<main class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10
+mx-auto max-w-7xl px-3 mb-16">
+    <!-- produto item -->
+    <div class="flex gap-4">
+        <img src="/assets/4.jpg" alt="nago"
+            class="w-32 h-40 rounded-md scale-110 mt-1 object-cover resume-left">
+
+        <div class="font-bold">
+            <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Barrel twist</p>
+            <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                Tranças Barriel twist a partir de:</p>
+            <div class="flex items-center gap-2 justify-center mt-10 combo-details-content">
+                <p class="font-bold text-lg resume-left">R$ 90.00</p>
+                <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                    data-name="Barrel twist" data-price="90.00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- produto item -->
+<!-- produto item -->
+    <div class="flex gap-4">
+        <img src="/assets/3.jpg" alt="Cintura"
+            class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+        <div class="font-bold">
+            <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Nagô Style</p>
+            <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio resume-right">Tranças nagô style a partir de:</p>
+            <div class="flex items-center gap-3 justify-center mt-10 combo-details-content">
+                <p class="font-bold text-lg resume-left ">R$ 50.00</p>
+                <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                    data-name="Tranças nagô style " data-price="50.00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"> </i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- FIM produto item -->
+
+    <!-- produto item -->
+    <div class="flex gap-4 mb-8">
+        <img src="/assets/1.jpg" alt="Costas"
+            class="w-32 h-40 rounded-md scale-110 mt-2 object-cover resume-left">
+
+        <div class="font-bold">
+            <p class="font-bold text-black hover:text-my-dark-brown title-produto text-center">Nagô</p>
+            <p class="text-xs font-medium text-justify  text-black hover:text-my-marrom-médio rright">
+                Tranças Masculina a partir de:</p>
+            <div class="flex items-center gap-2 justify-center mt-10 combo-details-content">
+                <p class="font-bold text-lg resume-left">R$ 30.00</p>
+                <button class="bg-gray-900 px-5 pt-2 rounded add-to-cart-btn opacidade-icon"
+                    data-name="Nagô masculina" data-price="30.00">
+
+                    <i class="fa fa-cart-plus text-lg text-white"> </i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- FIM produto item -->
+    <!-- FIM masculino  -->
+</main>
+</div>
+    <!-- FIM MENU serviços 2-->
+
+    <!------ fim GRID nagô------>
+
+    <!--modal card-->
+    <div class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        id="cart-modal">
+
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] ">
+            <h2 class="text-center font-bold text-2x1 mb-2">
+                Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold border-b-4 pb-2 mb-2 border-gray-200">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4 mb-2">Informe seu nome completo:</p>
+            <input type="text" placeholder="Digite seu nome..." id="address"
+                class="w-full px-4 py-2 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+             <p class="font-bold mt-4 mb-2">Nome da trança:</p>
+            <input type="text" placeholder="Digite o nome da trança..." id="tranca"
+                class="w-full px-4 py-2 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">    
+
+            <p class="text-red-500 hidden text-sm" id="address-warn">Digite seu nome!</p>
+
+            <div class="flex items-center justify-between">
+                <button
+                    class="mt-4 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 transition-colors shadow-lg shadow-red-300/30"
+                    id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn"
+                    class="bg-green-500 text-white px-4 py-1 mt-4 rounded shadow-lg hover:bg-green-600 shadow-green-300/30">Finalizar
+                    pedido</button>
+            </div>
+        </div>
+
+    </div>
+    <!--Fim modal card-->
+    <!--Button CART FOOTER -->
+    <footer
+        class="w-full bg-my-dark-brown py-4 fixed bottom-0 z-40 flex items-center justify-center text-white text-center transition-opacity duration-500 opacity-100 "
+        id="main-footer">
+        <button class="flex items-center gap-2 text-white font-bold opacidade-icon" id="cart-btn">
+            <span class="opacidade-icon" id="cart-count">(0)</span>
+            Meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white icon-carrinho"> </i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

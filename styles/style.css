@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#f4ede8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== CORES ==========*/
+  --first-hue: 260;
+  --second-hue: 216;
+  --first-color: hsl(var(--first-hue), 91%, 64%);
+  --first-color-dark: hsl(var(--first-hue), 62%, 20%);
+  --title-color: hsl(var(--second-hue), 8%, 85%);
+  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --body-color: hsl(var(--second-hue), 28%, 12%);
+  --container-color: hsl(var(--second-hue), 28%, 15%);
+  --white-color: hsl(var(--second-hue), 8%, 100%);
+
+  --first-gradient: linear-gradient(150deg,
+      var(--first-color) 0%,
+      var(--white-color) 100%);
+  --second-gradient: linear-gradient(260deg,
+      var(--first-color-dark) 0%,
+      var(--first-color) 100%);
+
+  /*========== Font family ==========*/
+  --body-font: 'Space Grotesk', sans-serif;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 8rem;
+  --h1-font-size: 3.75rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.5rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1208px) {
+
+  :root {
+    --big-font-size: 6.25rem;
+    --h1-font-size: 2.75rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.25rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+  }
+
+}
+/* Responsive typography */
+@media screen and (max-width: 1208px) {
+
+  :root {
+    --big-font-size: 6.25rem;
+    --h1-font-size: 2.75rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.25rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+  }
+
+}
+/*=============== background-home ===============*/
+.bgr-home {
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    background-image: url('../assets/bg.jpg'); /* Verifique o caminho real da sua imagem! */
+    background-size: cover;
+    background-position: center;
+}
+
+.bgr-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 42, 0.3); 
+
+    z-index: 1; /* Garante que a camada de opacidade esteja acima da imagem de fundo */
+}
+
+/* Ajuste o z-index do conteúdo para que ele fique acima da camada de opacidade */
+.bgr-home > div { /* Isso seleciona o div interno com o conteúdo */
+    position: relative;
+    z-index: 2; 
+}
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.scroll-header {
+  background-color: rgb(219 153 126 / (#db997e, 1));
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.2);
+  background: #db997e;
+}
+
+.nav,
+.nav-list,
+.nav-btns {
+  display: flex;
+}
+
+.nav {
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 3rem;
+  height: 4.5rem;
+}
+
+.nav-logo,
+.nav-link,
+.change-theme {
+  color: black;
+}
+
+.nav-logo {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: black;
+}
+
+.nav-menu {
+  margin-left: auto;
+
+}
+
+.nav-list {
+  column-gap: 2.75rem;
+
+}
+
+.nav-link {
+  font-weight: var(--font-medium);
+  transition: color 0.8s;
+}
+
+.nav-link:hover {
+  color:#4E3524;
+}
+
+.nav-btns {
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nav-close,
+.nav-toggle {
+  display: none;
+}
+
+/* Active link */
+.active-link {
+  color: black;
+}
+
+/* Change background header */
+
+/******* Estilo para o container principal do combo de duas imagens ******/
+.combo-card {
+    display: flex; /* Permite que os sub-containers se alinhem */
+    flex-direction: column; /* Empilha as imagens e os detalhes verticalmente */
+    align-items: center; /* Centraliza todo o conteúdo horizontalmente */
+    gap: 15px; /* Espaçamento entre as imagens e o bloco de detalhes */
+    padding: 15px;
+    background-color: #f1d8c0; /* Cor de fundo do card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa a largura total da coluna do grid */
+    max-width: 350px; /* Limita a largura máxima para não ficar muito largo em telas grandes */
+    margin-left: auto; /* Centraliza o card no grid */
+    margin-right: auto; /* Centraliza o card no grid */
+}
+
+/* Container para as duas imagens individuais (Nagô tiara e Postiça realista) */
+.combo-images-container {
+    display: flex; /* Alinha as duas imagens lado a lado */
+    gap: 15px; /* Espaçamento entre as duas imagens */
+    justify-content: center; /* Centraliza as imagens dentro do container */
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha se não houver espaço */
+    padding-top: 20px;
+}
+
+/* Estilo para cada item individual (imagem + nome) dentro do combo */
+.combo-item-single {
+    display: flex;
+    flex-direction: column; /* Empilha a imagem e o título */
+    align-items: center; /* Centraliza a imagem e o título horizontalmente */
+    text-align: center; /* Alinha o texto do título */
+}
+
+.combo-item-single img {
+    /* As classes w-28 h-40 do Tailwind já definem largura e altura */
+    /* w-28 = 112px, h-40 = 160px */
+    width: 112px;
+    height: 160px;
+    border-radius: 6px; /* Para as bordas arredondadas */
+    object-fit: cover;
+    margin-bottom: 5px; /* Espaçamento entre a imagem e o nome */
+}
+
+/* Estilo para o título individual da imagem (Nagô tiara, Postiça realista) */
+.combo-item-single .combo-title {
+    font-size: var(--small-font-size); /* Use uma variável de fonte definida no seu CSS */
+    /* Ou defina um tamanho específico, ex: font-size: 0.875rem; */
+    white-space: nowrap; /* Evita que o texto quebre */
+    overflow: hidden; /* Esconde o excesso de texto */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
+
+/* Estilo para a seção de detalhes (título geral, preço e botão) */
+.combo-details-content {
+    display: flex;
+    flex-direction: column; /* Empilha os detalhes verticalmente */
+    width: 100%; /* Ocupa a largura total do combo-card */
+    align-items: center; /* Centraliza o título geral e o bloco de preço/botão */
+    text-align: center; /* Centraliza o texto do título geral */
+}
+
+/* Ajuste para o título geral do combo */
+.combo-details-content .title-produto {
+    font-size: var(--large-font-size); /* Ou um tamanho adequado */
+    margin-bottom: 10px; /* Espaçamento abaixo do título geral */
+    margin-top: 5px; /* Espaçamento acima do título geral */
+}
+
+/* Ajuste para o container do preço e botão */
+.combo-details-content > div.flex { /* Seleciona o div que contém o preço e o botão */
+    width: 100%; /* Ocupa a largura total para justificar o conteúdo */
+    justify-content: space-between; /* Empurra preço para um lado e botão para o outro */
+    padding: 0 10px; /* Adiciona um pequeno padding para não colar nas bordas */
+}
+
+
+.add-to-cart-btn {
+    /* Você já tem estilos para este botão, mantenha-os */
+    margin-top: 10px; /* Adiciona um espaço acima do botão, se necessário */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    /* Remova a opacidade-icon do HTML e adicione aqui se precisar */
+}
+
+
+/* PARA MEDIOS DISPOSITIVOS */
+@media screen and (max-width: 1024px) {
+
+  .nav {
+    height: 3.75rem;
+  }
+
+  .nav-toggle,
+  .nav-close {
+    display: inline-flex;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla ((#997b66));
+    width: 55%;
+    height: 100%;
+    padding: 5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    transition: right 0.4s;
+    
+  }
+
+  .show-menu {
+    right: 0;
+
+  }
+
+  .nav-list {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+}
+
+/* PARA MEDIOS DISPOSITIVOS */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    width: 70%;
+
+  }
+}
