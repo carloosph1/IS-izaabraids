@@ -145,8 +145,6 @@ cart.forEach(item => {
         remover
         </button>    
         
-
-
     </div>
     `
 
@@ -207,7 +205,7 @@ checkoutBtn.addEventListener("click", function(){
     const isOpen = checkRestaurante();
     if(!isOpen){
         Toastify({
-  text: "Ops... Estamos fechados. Entre em contato de 8h as 18h",
+  text: "Ops... Estamos fechados. Entre em contato de 8h as 20h",
   duration: 4000,
   close: true,
   gravity: "top", // `top` or `bottom`
@@ -267,7 +265,7 @@ ${mensagemAutomatica}
 function checkRestaurante(){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 8 && hora < 23; 
+    return hora >= 8 && hora < 21; 
 //true = restaurante está aberto
 
 }
@@ -319,8 +317,8 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal(`.title-mv-servico`, { delay:700});
     sr.reveal(`.resume-left, .title-produto`, { origin: 'left' });
     sr.reveal(`.resume-right`, { origin: 'right' });
-    sr.reveal(`.lleft, .title-produto`, { origin: 'left', duration: 4500, delay: 700, distance:'80px' });
-    sr.reveal(`.rright`, { origin: 'right',duration: 4500, delay: 700 , distance:'80px' });
+    sr.reveal(`.lleft, .title-produto`, { origin: 'left', duration: 4500, delay: 300, distance:'50px' });
+    sr.reveal(`.rright`, { origin: 'right',duration: 4500, delay: 300 , distance:'50px' });
 
     sr.reveal(`.opacidade-icon`, {
         origin: 'bottom',

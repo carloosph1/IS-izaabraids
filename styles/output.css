@@ -622,6 +622,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -700,6 +704,10 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .flex {
@@ -1179,21 +1187,6 @@ html {
   }
 }
 
-/* Responsive typography */
-
-@media screen and (max-width: 1208px) {
-  :root {
-    --big-font-size: 6.25rem;
-    --h1-font-size: 2.75rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.25rem;
-    --larger-font-size: 1.25rem;
-    --large-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-  }
-}
-
 /*=============== background-home ===============*/
 
 .bgr-home {
@@ -1472,6 +1465,12 @@ html {
     top: 1rem;
     right: 1.5rem;
   }
+}
+
+.container {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
 }
 
 .main {
