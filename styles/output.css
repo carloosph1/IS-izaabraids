@@ -622,10 +622,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -640,6 +636,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -704,10 +704,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .flex {

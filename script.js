@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sr = ScrollReveal({
         origin: 'top',
         distance: '30px',
-        duration: 3500,
+        duration: 3000,
         delay: 400,
     });
     sr.reveal(`.title-mv, .title-span-mv`);
@@ -317,21 +317,21 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal(`.title-mv-servico`, { delay:700});
     sr.reveal(`.resume-left, .title-produto`, { origin: 'left' });
     sr.reveal(`.resume-right`, { origin: 'right' });
-    sr.reveal(`.lleft, .title-produto`, { origin: 'left', duration: 4500, delay: 300, distance:'50px' });
-    sr.reveal(`.rright`, { origin: 'right',duration: 4500, delay: 300 , distance:'50px' });
+    sr.reveal(`.lleft, .title-produto`, { origin: 'left', duration: 2500, delay: 300, distance:'50px' });
+    sr.reveal(`.rright`, { origin: 'right',duration: 2500, delay: 300 , distance:'50px' });
 
     sr.reveal(`.opacidade-icon`, {
         origin: 'bottom',
         distance: '45px', 
         opacity: 0,      
-        duration: 3500,  
+        duration: 2500,  
         delay: 500,      
     });
      sr.reveal(`.surgir-icon`, {
         origin: 'top',
         distance: '25px', 
         opacity: 0,      
-        duration: 3500,  
+        duration: 3000,  
         delay: 500,      
     });
 
